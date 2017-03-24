@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <div v-for="card in cards">
+    <draw />
+    <div v-for="card in deck">
       Name: {{ card.name }}
       <img :src="imgPath(card.path)" />
     </div>
@@ -8,16 +9,12 @@
 </template>
 
 <script>
+import Draw from './draw.vue'
 export default {
   name: 'app',
-  data () {
-    return {
-    }
-  },
+  components: { Draw },
   computed: {
-    cards () {
-      return this.$store.state.cards
-    }
+    deck () { return this.$store.state.deck }
   },
   methods: {
     imgPath (url) {

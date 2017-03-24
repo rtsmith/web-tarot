@@ -6,7 +6,15 @@ Vue.use(Vuex)
 
 let store = new Vuex.Store({
   state: {
-    cards: cards
+    deck: cards,
+    drawnCard: {}
+  },
+  mutations: {
+    draw (state) {
+      let index = Math.floor(Math.random() * state.deck.length)
+      state.drawnCard = state.deck[index]
+      state.deck.splice(index, 1)
+    }
   }
 })
 
