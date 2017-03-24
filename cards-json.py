@@ -3,7 +3,7 @@
 import glob
 import json
 
-paths = glob.glob('assets/img/*.jpg')
+paths = glob.glob('src/assets/img/*.jpg')
 images = []
 
 for p in paths:
