@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div v-for="card in cards">
+      Name: {{ card.name }}
+      <img :src="imgPath(card.path)" />
+    </div>
   </div>
 </template>
 
@@ -8,6 +12,17 @@ export default {
   name: 'app',
   data () {
     return {
+    }
+  },
+  computed: {
+    cards () {
+      return this.$store.state.cards
+    }
+  },
+  methods: {
+    imgPath (url) {
+      // use this to get the webpack'd reference
+      return require(`./${url}`)
     }
   }
 }
