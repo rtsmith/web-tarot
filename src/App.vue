@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <draw />
-    <div v-for="card in deck">
-      Name: {{ card.name }}
-      <img :src="imgPath(card.path)" />
+    <div class="field">
+      <div v-for="card in drawnCards">
+        <p v-if="card.name">{{ card.name }}</p>
+        <img :src="imgPath(card.path)" />
+      </div>
     </div>
   </div>
 </template>
@@ -14,12 +16,13 @@ export default {
   name: 'app',
   components: { Draw },
   computed: {
-    deck () { return this.$store.state.deck }
+    drawnCards () { return this.$store.state.drawnCards }
   },
   methods: {
-    imgPath (url) {
+    imgPath (path) {
       // use this to get the webpack'd reference
-      return require(`./${url}`)
+      if (path)
+        return require(`./${path}`)
     }
   }
 }
@@ -34,22 +37,15 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
-h1, h2 {
-  font-weight: normal;
+.field {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  text-align: center;
+  img {
+    max-width: 200px;
+  }
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.field > div {
+  width: 25%;
 }
 </style>
