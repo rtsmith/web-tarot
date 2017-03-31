@@ -5,29 +5,23 @@
     <div class="drawn-card">
       <img v-if="drawnCard" :src="imgPath(drawnCard.path)" />
     </div>
-    <div class="field">
-      <div v-for="card in drawnCards">
-        <p v-if="card.name">{{ card.name }}</p>
-        <img :src="imgPath(card.path)" />
-      </div>
-    </div>
+    <field />
   </div>
 </template>
 
 <script>
 import Draw from './draw.vue'
 import Shuffle from './shuffle.vue'
+import Field from './field.vue'
 
 export default {
   name: 'app',
   components: {
     Draw,
-    Shuffle
+    Shuffle,
+    Field,
   },
   computed: {
-    drawnCards () {
-      return this.$store.state.drawnCards 
-    },
     drawnCard () {
       return this.$store.state.drawnCards.slice(-1)[0]
     }
@@ -56,16 +50,5 @@ export default {
   img {
     height: 200px;
   }
-}
-.field {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  text-align: center;
-  img {
-    max-width: 200px;
-  }
-}
-.field > div {
-  width: 25%;
 }
 </style>
