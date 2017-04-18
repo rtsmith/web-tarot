@@ -37,10 +37,15 @@ let layouts = {
 let store = new Vuex.Store({
   state: {
     deck: Object.create(cards),
-    layout: layouts.celtic,
-    drawnCards: []
+    layouts: layouts,
+    layout: layouts.basic,
+    drawnCards: [],
+    focus: -1
   },
   mutations: {
+    changeLayout (state, layout) {
+      state.layout = state.layouts[layout]
+    },
     draw (state) {
       let index = Math.floor(Math.random() * state.deck.length)
       state.drawnCards.push(state.deck[index])
@@ -49,6 +54,10 @@ let store = new Vuex.Store({
     shuffle (state) {
       state.deck = Object.create(cards)
       state.drawnCards = []
+      state.focus = -1
+    },
+    focus (state, index) {
+      state.focus = index
     }
   }
 })

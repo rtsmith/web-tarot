@@ -6,11 +6,6 @@
 
 <script>
 export default {
-  computed: {
-    card () { 
-      return this.$store.state.drawnCards.slice(-1)[0]
-    }
-  },
   methods: {
     drawCard () {
       this.$store.commit('draw')
@@ -18,12 +13,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.draw {
-  max-height: 300px;
-  img {
-    height: 200px;
-  }
-}
-</style>

@@ -2,6 +2,7 @@
   <div id="app">
     <draw />
     <shuffle />
+    <layout />
     <div class="drawn-card">
       <img v-if="drawnCard" :src="imgPath(drawnCard.path)" />
     </div>
@@ -13,6 +14,7 @@
 import Draw from './draw.vue'
 import Shuffle from './shuffle.vue'
 import Field from './field.vue'
+import Layout from './layout.vue'
 
 export default {
   name: 'app',
@@ -20,6 +22,7 @@ export default {
     Draw,
     Shuffle,
     Field,
+    Layout
   },
   computed: {
     drawnCard () {
