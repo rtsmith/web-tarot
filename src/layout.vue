@@ -15,11 +15,10 @@
 export default {
   computed: {
     layouts () {
-      return Object.keys(this.$store.state.layouts)
+      return this.$store.state.layouts
     },
     activeLayout () {
-      let layout = (this.$store.state.layout)
-      return layout
+      return this.$store.state.layout
     }
   },
   methods: {
@@ -31,7 +30,14 @@ export default {
 </script>
 
 <style lang="scss">
-  button.active {
-    background: purple;
+button {
+  &.active {
+    background: white;
+    border: 1px solid purple;
+    border-radius: 5px;
   }
+  &:focus {
+    outline: none;
+  }
+}
 </style>

@@ -30,11 +30,14 @@ export default {
         return style
       },
       containerStyle () {
-        let x = Math.max(...this.$store.state.layout.map(v => v.x)) + 1
-        let y = Math.max(...this.$store.state.layout.map(v => v.y)) + 1
-        return {
-          "grid-template-rows": `repeat(${ x }, 1fr)`,
-          "grid-template-columns": `repeat(${ y }, 1fr)`
+        let layout = this.$store.getters.layoutData
+        if (layout) {
+          let x = Math.max(...layout.map(v => v.x)) + 1
+          let y = Math.max(...layout.map(v => v.y)) + 1
+          return {
+            "grid-template-rows": `repeat(${ x }, 1fr)`,
+            "grid-template-columns": `repeat(${ y }, 1fr)`
+          }
         }
       }
     }
@@ -44,7 +47,7 @@ export default {
       return this.$store.state.drawnCards 
     },
     layout () {
-      return this.$store.state.layout
+      return this.$store.getters.layoutData
     }
   },
   methods: {
