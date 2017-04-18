@@ -1,12 +1,11 @@
 <template>
   <div class=field :style="containerStyle()">
     <div v-for="cell in layout" :style="cellStyle(cell)">
-        <div v-if="drawnCards[cell.order - 1]"
-          v-on:click="focusCard(cell.order)"
-          class=card
-        >
-          <img :src="imgPath(drawnCards[cell.order - 1].path)" />
-        </div>
+      <div v-if="drawnCards[cell.order - 1]"
+           v-on:mousedown="focusCard(cell.order)"
+           class="card">
+        <img :src="imgPath(drawnCards[cell.order - 1].path)" />
+      </div>
     </div>
   </div>
 </template>
@@ -32,6 +31,8 @@ export default {
       containerStyle () {
         let layout = this.$store.getters.layoutData
         if (layout) {
+          // find the number of rows & columns from arbitrary rectangular layout
+          // then return some CSS
           let x = Math.max(...layout.map(v => v.x)) + 1
           let y = Math.max(...layout.map(v => v.y)) + 1
           return {

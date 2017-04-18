@@ -4,7 +4,7 @@ import cards from '../cards.json'
 
 Vue.use(Vuex)
 
-let layouts = {
+let Layouts = {
   basic: [
     {x: 2, y: 2, order: null},
     {x: 0, y: 1, order: 5},
@@ -37,14 +37,15 @@ let layouts = {
 let store = new Vuex.Store({
   state: {
     deck: Object.create(cards),
-    layouts: Object.keys(layouts),
-    layout: Object.keys(layouts)[0],
+    layouts: Object.keys(Layouts),
+    layout: Object.keys(Layouts)[0],
     drawnCards: [],
     focus: -1
   },
   getters: {
+    // keeps Layouts out of state
     layoutData (state) {
-      return layouts[state.layout]
+      return Layouts[state.layout]
     }
   },
   mutations: {

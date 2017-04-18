@@ -1,11 +1,9 @@
 <template>
   <div>
     <h4>Layouts</h4>
-    <button 
-      v-for="layout in layouts" 
-      v-on:click="changeLayout(layout)"
-      :class="{ active: layout === activeLayout }"
-    >
+    <button v-for="layout in layouts"
+            v-on:click="changeLayout(layout)"
+            :class="{ active: layout === activeLayout }">
       {{ layout }}
     </button>
   </div>
