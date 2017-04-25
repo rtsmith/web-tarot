@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <draw />
-    <shuffle />
-    <layout />
-    <div class="drawn-card">
-      <img v-if="drawnCard" :src="imgPath(drawnCard.path)" />
+    <div class="controls container">
+      <layout />
+      <hr>
+      <draw />
+      <shuffle />
+      <div v-if="inspectedCard" class="inspected-card">
+        <img :src="imgPath(inspectedCard.path)" />
+        <p>{{ inspectedCard.name }}</p>
+      </div>
     </div>
-    <field />
+    <div class="layout container">
+      <field />
+    </div>
   </div>
 </template>
 
@@ -25,8 +31,8 @@ export default {
     Layout
   },
   computed: {
-    drawnCard () {
-      return this.$store.state.drawnCards.slice(-1)[0]
+    inspectedCard () {
+      return this.$store.getters.inspectedCard
     }
   },
   methods: {
@@ -44,14 +50,45 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  font-size: 20px;
   color: #2c3e50;
   margin-top: 60px;
+  box-sizing: border-box;
 }
-.drawn-card {
+.inspected-card {
   max-height: 300px;
+  padding: 1em;
   img {
     height: 200px;
+  }
+}
+.container {
+  display: inline-block;
+  vertical-align: top;
+}
+.controls {
+  width: 20%;
+  max-width: 300px;
+  margin-right: -1em;
+  & > div {
+    display: inline-block;
+  }
+}
+.layout {
+  width: 80%;
+}
+button {
+  font-size: .8em;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px gray;
+  &.active {
+    background: white;
+    border: 2px solid purple;
+  }
+  &:focus {
+    outline: none;
   }
 }
 </style>

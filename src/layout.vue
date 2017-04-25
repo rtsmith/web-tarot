@@ -28,14 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
-button {
-  &.active {
-    background: white;
-    border: 1px solid purple;
-    border-radius: 5px;
+  h4 {
+    margin: 0;
   }
-  &:focus {
-    outline: none;
-  }
-}
 </style>

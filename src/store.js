@@ -43,9 +43,16 @@ let store = new Vuex.Store({
     focus: -1
   },
   getters: {
-    // keeps Layouts out of state
     layoutData (state) {
+      // keeps Layouts out of state
       return Layouts[state.layout]
+    },
+    inspectedCard (state) {
+      if (state.focus > -1) {
+        return state.drawnCards.slice(state.focus - 1 )[0]
+      } else {
+        return state.drawnCards.slice(-1)[0]
+      }
     }
   },
   mutations: {
