@@ -1,11 +1,13 @@
 <template>
   <div class=field :style="containerStyle()">
     <div v-for="cell in layout" :style="cellStyle(cell)">
-      <div v-if="drawnCards[cell.order - 1]"
-           v-on:mousedown="focusCard(cell.order)"
-           class="card">
-        <img :src="imgPath(drawnCards[cell.order - 1].path)" />
-      </div>
+      <transition name="fade">
+        <div v-if="drawnCards[cell.order - 1]"
+             v-on:mousedown="focusCard(cell.order)"
+             class="card">
+          <img :src="imgPath(drawnCards[cell.order - 1].path)" />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -76,5 +78,12 @@ export default {
 .field .card {
   display: inline-block;
   padding: 4px;
+}
+.fade-enter-active .fade-leave-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.fade-enter .fade-leave-to {
+  opacity: 0;
 }
 </style>
