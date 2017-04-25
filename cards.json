@@ -1,314 +1,314 @@
 [
   {
-    "name": "One of Cups", 
+    "name": "Ace of Cups",
     "path": "assets/img/cards-large/cups01.jpg"
-  }, 
+  },
   {
-    "name": "Two of Cups", 
+    "name": "Two of Cups",
     "path": "assets/img/cards-large/cups02.jpg"
-  }, 
+  },
   {
-    "name": "Three of Cups", 
+    "name": "Three of Cups",
     "path": "assets/img/cards-large/cups03.jpg"
-  }, 
+  },
   {
-    "name": "Four of Cups", 
+    "name": "Four of Cups",
     "path": "assets/img/cards-large/cups04.jpg"
-  }, 
+  },
   {
-    "name": "Five of Cups", 
+    "name": "Five of Cups",
     "path": "assets/img/cards-large/cups05.jpg"
-  }, 
+  },
   {
-    "name": "Six of Cups", 
+    "name": "Six of Cups",
     "path": "assets/img/cards-large/cups06.jpg"
-  }, 
+  },
   {
-    "name": "Seven of Cups", 
+    "name": "Seven of Cups",
     "path": "assets/img/cards-large/cups07.jpg"
-  }, 
+  },
   {
-    "name": "Eight of Cups", 
+    "name": "Eight of Cups",
     "path": "assets/img/cards-large/cups08.jpg"
-  }, 
+  },
   {
-    "name": "Nine of Cups", 
+    "name": "Nine of Cups",
     "path": "assets/img/cards-large/cups09.jpg"
-  }, 
+  },
   {
-    "name": "Ten of Cups", 
+    "name": "Ten of Cups",
     "path": "assets/img/cards-large/cups10.jpg"
-  }, 
+  },
   {
-    "name": "Page of Cups", 
+    "name": "Page of Cups",
     "path": "assets/img/cards-large/cups11.jpg"
-  }, 
+  },
   {
-    "name": "Knight of Cups", 
+    "name": "Knight of Cups",
     "path": "assets/img/cards-large/cups12.jpg"
-  }, 
+  },
   {
-    "name": "Queen of Cups", 
+    "name": "Queen of Cups",
     "path": "assets/img/cards-large/cups13.jpg"
-  }, 
+  },
   {
-    "name": "King of Cups", 
+    "name": "King of Cups",
     "path": "assets/img/cards-large/cups14.jpg"
-  }, 
+  },
   {
-    "name": "The Fool", 
+    "name": "The Fool",
     "path": "assets/img/cards-large/maj00.jpg"
-  }, 
+  },
   {
-    "name": "The Magician", 
+    "name": "The Magician",
     "path": "assets/img/cards-large/maj01.jpg"
-  }, 
+  },
   {
-    "name": "The High Priestess", 
+    "name": "The High Priestess",
     "path": "assets/img/cards-large/maj02.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Empress",
     "path": "assets/img/cards-large/maj03.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Emperor",
     "path": "assets/img/cards-large/maj04.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Hierophant",
     "path": "assets/img/cards-large/maj05.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Lovers",
     "path": "assets/img/cards-large/maj06.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Chariot",
     "path": "assets/img/cards-large/maj07.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Strength",
     "path": "assets/img/cards-large/maj08.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Hermit",
     "path": "assets/img/cards-large/maj09.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Wheel of Fortune",
     "path": "assets/img/cards-large/maj10.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Justice",
     "path": "assets/img/cards-large/maj11.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Hanged Man",
     "path": "assets/img/cards-large/maj12.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Death",
     "path": "assets/img/cards-large/maj13.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Temperance",
     "path": "assets/img/cards-large/maj14.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Devil",
     "path": "assets/img/cards-large/maj15.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Tower",
     "path": "assets/img/cards-large/maj16.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Star",
     "path": "assets/img/cards-large/maj17.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Moon",
     "path": "assets/img/cards-large/maj18.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The Sun",
     "path": "assets/img/cards-large/maj19.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Judgement",
     "path": "assets/img/cards-large/maj20.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "The World",
     "path": "assets/img/cards-large/maj21.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Ace of Pentacles",
     "path": "assets/img/cards-large/pents01.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Two of Pentacles",
     "path": "assets/img/cards-large/pents02.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Three of Pentacles",
     "path": "assets/img/cards-large/pents03.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Four of Pentacles",
     "path": "assets/img/cards-large/pents04.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Five of Pentacles",
     "path": "assets/img/cards-large/pents05.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Six of Pentacles",
     "path": "assets/img/cards-large/pents06.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Seven of Pentacles",
     "path": "assets/img/cards-large/pents07.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Eight of Pentacles",
     "path": "assets/img/cards-large/pents08.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Nine of Pentacles",
     "path": "assets/img/cards-large/pents09.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Ten of Pentacles",
     "path": "assets/img/cards-large/pents10.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Page of Pentacles",
     "path": "assets/img/cards-large/pents11.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Knight of Pentacles",
     "path": "assets/img/cards-large/pents12.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Queen of Pentacles",
     "path": "assets/img/cards-large/pents13.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "King of Pentacles",
     "path": "assets/img/cards-large/pents14.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Ace of Swords",
     "path": "assets/img/cards-large/swords01.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Two of Swords",
     "path": "assets/img/cards-large/swords02.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Three of Swords",
     "path": "assets/img/cards-large/swords03.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Four of Swords",
     "path": "assets/img/cards-large/swords04.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Five of Swords",
     "path": "assets/img/cards-large/swords05.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Six of Swords",
     "path": "assets/img/cards-large/swords06.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Seven of Swords",
     "path": "assets/img/cards-large/swords07.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Eight of Swords",
     "path": "assets/img/cards-large/swords08.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Nine of Swords",
     "path": "assets/img/cards-large/swords09.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Ten of Swords",
     "path": "assets/img/cards-large/swords10.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Page of Swords",
     "path": "assets/img/cards-large/swords11.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Knight of Swords",
     "path": "assets/img/cards-large/swords12.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Queen of Swords",
     "path": "assets/img/cards-large/swords13.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "King of Swords",
     "path": "assets/img/cards-large/swords14.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Ace of Wands",
     "path": "assets/img/cards-large/wands01.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Two of Wands",
     "path": "assets/img/cards-large/wands02.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Three of Wands",
     "path": "assets/img/cards-large/wands03.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Four of Wands",
     "path": "assets/img/cards-large/wands04.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Five of Wands",
     "path": "assets/img/cards-large/wands05.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Six of Wands",
     "path": "assets/img/cards-large/wands06.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Seven of Wands",
     "path": "assets/img/cards-large/wands07.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Eight of Wands",
     "path": "assets/img/cards-large/wands08.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Nine of Wands",
     "path": "assets/img/cards-large/wands09.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Ten of Wands",
     "path": "assets/img/cards-large/wands10.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Page of Wands",
     "path": "assets/img/cards-large/wands11.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Knight of Wands",
     "path": "assets/img/cards-large/wands12.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "Queen of Wands",
     "path": "assets/img/cards-large/wands13.jpg"
-  }, 
+  },
   {
-    "name": "", 
+    "name": "King of Wands",
     "path": "assets/img/cards-large/wands14.jpg"
   }
 ]
