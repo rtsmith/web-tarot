@@ -77,6 +77,8 @@ export default {
 .layout {
   width: 80%;
 }
+.inspected-card {
+}
 button {
   font-size: .8em;
   background: white;
